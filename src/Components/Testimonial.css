@@ -1,0 +1,59 @@
+.Principal-testimonial {
+  background-color: white;
+  width: 70rem;
+  display: flex;
+  margin-top: 4rem;
+  margin-inline: auto;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  width: 40%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  transition: all 0.5s ease-in-out;
+
+  /* width: auto; */
+  /* height: 100%; */
+}
+
+img:hover {
+  transform: scale(1.085);
+  filter: opacity(0.85);
+}
+
+.Contenedor-testimonial {
+  display: flex;
+
+  overflow: hidden;
+}
+
+.Nombre-testimonial {
+  font-size: 1.45rem;
+  margin-block: 2.5rem 1rem;
+  text-align: center;
+  color: rgb(61, 61, 61);
+  font-weight: bold;
+}
+
+.Nombre-testimonial p > span {
+  font-weight: normal;
+}
+
+.Cargo-testimonial {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-block: 0.7rem;
+}
+
+.Cargo-testimonial p > span {
+  font-weight: bolder;
+}
+
+.Texto-testimonial {
+  margin-block: 1.5rem;
+  padding: 0.7rem 3rem;
+  text-align: justify;
+  font-size: 1.1rem;
+}
