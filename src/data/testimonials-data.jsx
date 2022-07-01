@@ -1,7 +1,11 @@
+const luis = "./../src/Images/luis.jpg";
+const karla = "./../src/Images/karla.jpg";
+const sarai = "./../src/Images/sarai.jpg";
+
 export const testimonialData = [
   {
     id: 1,
-    imagen: "./../src/Images/luis.jpg",
+    imagen: luis,
     alt: "Luis Cabrera",
     nombre: "Luis Cabrera",
     pais: "Suecia",
@@ -12,7 +16,7 @@ export const testimonialData = [
   },
   {
     id: 2,
-    imagen: "./../src/Images/karla.jpg",
+    imagen: karla,
     alt: "Karla Cazares",
     nombre: "Karla Cazares",
     pais: "Perú",
@@ -23,7 +27,7 @@ export const testimonialData = [
   },
   {
     id: 3,
-    imagen: "./../src/Images/sarai.jpg",
+    imagen: sarai,
     alt: "Sarai Sanchez",
     nombre: "Sarai Sanchez",
     pais: "México",
