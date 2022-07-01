@@ -1,6 +1,10 @@
-const luis = "./src/Images/luis.jpg";
-const karla = "./src/Images/karla.jpg";
-const sarai = "./src/Images/sarai.jpg";
+// const luis  =  './../src/public/luis.jpg';
+// const karla = "./src/public/karla.jpg";
+// const sarai2 = "./src/public/sarai.jpg";
+
+import luis from "/src/public/sarai.jpg";
+import karla from "/src/public/sarai.jpg";
+import sarai from "/src/public/sarai.jpg";
 
 export const testimonialData = [
   {
