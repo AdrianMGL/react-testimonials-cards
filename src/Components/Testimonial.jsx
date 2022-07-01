@@ -1,29 +1,33 @@
-import andrea from "../Images/andrea.jpg";
-import karla from "../Images/person1.jpeg";
+import React from "react";
 import "./Testimonial.css";
 
-function Testimonial({ nombre, pais, cargo, empresa, testimonio }) {
+import { testimonialData } from "../data/testimonials-data";
+
+function Testimonial() {
   return (
     <div className="Principal-testimonial">
-      <div className="Contenedor-testimonial">
-        <img src={andrea} alt="Andrea" />
-
-        <div className="Datos-testimonial">
-          <div className="Nombre-testimonial">
-            <p>
-              {nombre} <span> en {pais}</span>
-            </p>
+      {testimonialData.map((data, key) => {
+        return (
+          <div className="Contenedor-testimonial " key={key}>
+            <img src={`./src/Images/${data.imagen}.jpg`} alt={data.alt} />
+            <div className="Datos-testimonial">
+              <div className="Nombre-testimonial">
+                <p>
+                  {data.nombre} <span> en {data.pais}</span>
+                </p>
+              </div>
+              <div className="Cargo-testimonial">
+                <p>
+                  {data.cargo} en <span>{data.empresa}</span>
+                </p>
+              </div>
+              <div className="Texto-testimonial">
+                <p>"{data.testimonio}"</p>
+              </div>
+            </div>
           </div>
-          <div className="Cargo-testimonial">
-            <p>
-              {cargo} en <span>{empresa}</span>
-            </p>
-          </div>
-          <div className="Texto-testimonial">
-            <p>"{testimonio}"</p>
-          </div>
-        </div>
-      </div>
+        );
+      })}
     </div>
   );
 }
