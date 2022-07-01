@@ -9,7 +9,7 @@ function Testimonial() {
       {testimonialData.map((data, key) => {
         return (
           <div className="Contenedor-testimonial " key={key}>
-            <img src={`./../../src/Images/${data.imagen}.jpg`} alt={data.alt} />
+            <img src={data.imagen} alt={data.alt} />
             <div className="Datos-testimonial">
               <div className="Nombre-testimonial">
                 <p>

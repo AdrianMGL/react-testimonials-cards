@@ -1,7 +1,7 @@
 export const testimonialData = [
   {
     id: 1,
-    imagen: "luis",
+    imagen: "./../src/Images/luis.jpg",
     alt: "Luis Cabrera",
     nombre: "Luis Cabrera",
     pais: "Suecia",
@@ -12,7 +12,7 @@ export const testimonialData = [
   },
   {
     id: 2,
-    imagen: "karla",
+    imagen: "./../src/Images/karla.jpg",
     alt: "Karla Cazares",
     nombre: "Karla Cazares",
     pais: "Perú",
@@ -23,7 +23,7 @@ export const testimonialData = [
   },
   {
     id: 3,
-    imagen: "sarai",
+    imagen: "./../src/Images/sarai.jpg",
     alt: "Sarai Sanchez",
     nombre: "Sarai Sanchez",
     pais: "México",
